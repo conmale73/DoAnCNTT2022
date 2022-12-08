@@ -2,8 +2,8 @@ import { useRoutes } from 'react-router-dom';
 import { DefaultLayout } from '../components/Layout';
 import NotFound from '../pages/NotFound';
 import { publishRoutes } from './PublishRoutes';
-import { productDetailRoutes } from './ProductDetailRoutes';
 import { newsDetailRoutes } from './NewsDetailRoutes';
+import { productDetailRoutes } from './ProductDetailRoutes';
 import { Outlet } from 'react-router-dom';
 export default function Routes() {
     const routes = [

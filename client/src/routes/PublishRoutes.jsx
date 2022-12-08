@@ -7,7 +7,11 @@ const Accessories = lazy(() => import('../pages/Accessories'));
 const Watches = lazy(() => import('../pages/Watches'));
 const Gifts = lazy(() => import('../pages/Gifts'));
 const Grooming = lazy(() => import('../pages/Grooming'));
-const About = lazy(() => import('../pages/About'));
+const Login = lazy(() => import('../pages/Authentication/Login'));
+const Profile = lazy(() => import('../pages/Authentication/Profile'));
+const Search = lazy(() => import('../pages/Search'));
+const ShoppingBag = lazy(() => import('../pages/ShoppingBag'));
+const Authentication = lazy(() => import('../pages/Authentication'));
 
 export const publishRoutes = [
     {
@@ -22,7 +26,7 @@ export const publishRoutes = [
         path: 'clothing',
         element: (
             <Suspense fallback={<Loading />}>
-                <Clothing title="Men's Designer Clothes | MR PORTER" />
+                <Clothing title="Men's Designer Clothes | Design Menswear | MR PORTER" />
             </Suspense>
         ),
     },
@@ -38,7 +42,7 @@ export const publishRoutes = [
         path: 'accessories',
         element: (
             <Suspense fallback={<Loading />}>
-                <Accessories title="Designer Accessories | MR PORTER" />
+                <Accessories title="Men's Designer Accessories | MR PORTER" />
             </Suspense>
         ),
     },
@@ -62,16 +66,49 @@ export const publishRoutes = [
         path: 'grooming',
         element: (
             <Suspense fallback={<Loading />}>
-                <Grooming title="Skincare, Shaving & Cologne | MR PORTER" />
+                <Grooming title="Skincare, Shaving and Fragance | MR PORTER" />
             </Suspense>
         ),
     },
     {
-        path: 'about',
+        path: 'account',
         element: (
             <Suspense fallback={<Loading />}>
-                <About title="About Us | MR PORTER" />
+                <Authentication title="MR PORTER" />
             </Suspense>
         ),
     },
+    {
+        path: 'login',
+        element: (
+            <Suspense fallback={<Loading />}>
+                <Login title="Login | MR PORTER" />
+            </Suspense>
+        ),
+    },
+    {
+        path: 'profile',
+        element: (
+            <Suspense fallback={<Loading />}>
+                <Profile title="Profile | MR PORTER" />
+            </Suspense>
+        ),
+    },
+    {
+        path: 'search',
+        element: (
+            <Suspense fallback={<Loading />}>
+                <Search title="Search | MR PORTER" />
+            </Suspense>
+        ),
+    },
+    {
+        path: 'shopping-bag',
+        element: (
+            <Suspense fallback={<Loading />}>
+                <ShoppingBag title="Shopping Bag | MR PORTER" />
+            </Suspense>
+        ),
+    },
+
 ];

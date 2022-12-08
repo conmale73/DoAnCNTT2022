@@ -29,7 +29,7 @@ function Footer() {
                     <div className={styles.logo}>
                         <i>
                             <Facebook />
-                            &ensp;<span>846k Likes</span>
+                            &ensp;<span>846k Subcribers</span>
                         </i>
                         &ensp;
                         <i>
