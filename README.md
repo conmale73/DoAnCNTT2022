@@ -10,7 +10,7 @@ Tên: Vũ Đức Hậu
 `json-server --watch db.json`
 ### Step 3: Truy cập folder Client và Admin qua Terminal
 ### Step 4: Nhập lần lượt các câu lệnh sau vào Terminal để cài đặt các package
-`npm install yarn` </br> </br>
+`npm install -g yarn` </br> </br>
 `yarn`
 ### Step 5: Nhập câu lệnh sau để chạy project
 `yarn dev`
